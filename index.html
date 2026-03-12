@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leanna's Baby Shower Invitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff0f5;
+            background-image: radial-gradient(#fce4ec 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card-container {
+            background-color: #ffffff;
+            background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 40px;
+            box-shadow: 0 20px 50px rgba(216, 27, 96, 0.15);
+            border-radius: 15px;
+            position: relative;
+            border: 12px solid #fce4ec;
+            text-align: center;
+        }
+        .whimsical-text {
+            font-family: 'Dancing Script', cursive;
+            color: #ad1457;
+        }
+        .elegant-serif {
+            font-family: 'Playfair Display', serif;
+            color: #4a3f41;
+        }
+        .raffle-box {
+            border: 3px dashed #f06292;
+            background-color: #fff9fb;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 15px;
+        }
+        .btn-registry {
+            display: inline-block;
+            background-color: #d81b60;
+            color: #ffffff;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.2s;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+        }
+        .btn-registry:hover {
+            background-color: #ad1457;
+            transform: scale(1.05);
+        }
+        .flower-icon { font-size: 24px; color: #f48fb1; }
+        .closing-note {
+            color: #880e4f;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="mb-4">
+            <span class="flower-icon">🌸</span>
+            <span class="uppercase tracking-[0.4em] text-[12px] text-pink-500 font-bold mx-2">It's a Girl!</span>
+            <span class="flower-icon">🌸</span>
+        </div>
+        
+        <h1 class="whimsical-text text-7xl mb-2">Baby Shower</h1>
+        <p class="italic text-gray-500 my-4">Please join us for a day of joy honoring</p>
+        <h2 class="elegant-serif text-4xl font-bold mb-6">Leanna & Gabe</h2>
+
+        <div class="h-[2px] w-4/5 bg-pink-100 mx-auto my-8"></div>
+
+        <!-- Details -->
+        <div class="space-y-6 text-gray-700">
+            <div>
+                <p class="font-bold tracking-widest uppercase text-sm text-pink-700">Sunday, May 17th</p>
+                <p class="text-md">2:00 PM — 4:00 PM</p>
+            </div>
+
+            <div>
+                <p class="font-bold tracking-widest uppercase text-sm text-pink-700">Bunker Hills Regional Park</p>
+                <p class="text-md font-medium">Pavilion 1</p>
+                <a href="https://maps.app.goo.gl/DMDiwz3M3vZ8dVLb9" target="_blank" class="text-xs text-pink-500 font-bold underline mt-2 inline-block">Tap for Directions</a>
+            </div>
+
+            <p class="text-sm italic text-pink-400">Refreshments and cake will be served</p>
+        </div>
+
+        <!-- Diaper Raffle -->
+        <div class="raffle-box">
+            <h3 class="whimsical-text text-3xl mb-2">Diaper Raffle</h3>
+            <p class="text-sm leading-relaxed text-gray-600">
+                Join the fun and help us build a diaper stash! Bring a pack of any size diapers and receive a raffle ticket for a chance to win gift cards to 
+                <span class="font-bold text-pink-700">Ulta, Caribou, Bath & Body Works,</span> or <span class="font-bold text-pink-700">The Cheesecake Factory</span>!
+            </p>
+            <p class="text-[11px] uppercase tracking-widest mt-4 font-black text-pink-500">More diapers = more chances to win!</p>
+        </div>
+
+        <!-- RSVP & Parking -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left text-xs text-gray-600 mt-8 border-t border-pink-50 pt-8">
+            <div class="border-l-4 border-pink-300 pl-4">
+                <p class="font-bold uppercase text-pink-400 mb-1">RSVP to Amber (Mom)</p>
+                <p class="text-gray-900 font-bold text-sm">763-313-1259</p>
+                <p class="text-gray-800">Amber.Stimpel@Gmail.com</p>
+            </div>
+            <div class="border-l-4 border-pink-300 pl-4">
+                <p class="font-bold uppercase text-pink-400 mb-1">Parking Information</p>
+                <p class="leading-tight text-gray-700">
+                    There is a $7 park entrance fee. If you'd like to coordinate a ride or need assistance, reach out to us!
+                </p>
+            </div>
+        </div>
+
+        <!-- Registry -->
+        <div class="mt-10">
+            <a href="https://www.target.com/gift-registry/gift-giver?registryId=7bea8840-eb34-11f0-adc7-fd6612dc4a44&type=BABY" 
+               target="_blank" 
+               class="btn-registry">
+               View Target Registry
+            </a>
+        </div>
+        
+        <p class="closing-note mt-12 uppercase tracking-widest italic">We can't wait to see you all there!</p>
+    </div>
+
+</body>
+</html>
